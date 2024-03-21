@@ -7,7 +7,8 @@ app.use(express.json());
 // in memory storage
 let users = [];
 
-// routes
+// Routes
+// get users
 app.get('/users', (req, res) => {
     res.json(users);
 });
@@ -62,3 +63,5 @@ app.post('/users/login', async (req, res) => {
 app.listen(3000, () => {
     console.log('app listening on port 3000')
 })
+
+// test routes with thunderclient(vscode) or postman
